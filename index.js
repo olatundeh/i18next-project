@@ -1,7 +1,7 @@
 import i18next from 'i18next';
 
 i18next.init({
-    lng: 'en',
+    fallbackLng: 'en',
     resources: {
         en: {
             translation: {
@@ -19,5 +19,5 @@ i18next.init({
     }
 });
 
-const ret = i18next.t('look.depper');
+const ret = i18next.t('look.depper', { lng: 'de' });
 console.log(ret);
