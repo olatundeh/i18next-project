@@ -15,9 +15,14 @@ i18next.init({
             translation: {
                 key: "hallo Welt"
             }
+        },
+        'de-CH': {
+            translation: {
+                //key: "hoi Walt"
+            }
         }
     }
 });
 
-const ret = i18next.t('look.depper', { lng: 'de' });
+const ret = i18next.t('look.depper', { lng: 'de-CH' });
 console.log(ret);
