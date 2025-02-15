@@ -5,16 +5,19 @@ i18next.init({
     resources: {
         en: {
             translation: {
-                "key": "hello World"
+                key: "hello World",
+                look: {
+                    depper: "some deep key"
+                }
             }
         },
         de: {
             translation: {
-                "key": "hallo Welt"
+                key: "hallo Welt"
             }
         }
     }
 });
 
-const ret = i18next.t('key', { lng: 'en' });
-console.log(ret); // hello World
+const ret = i18next.t('look.depper');
+console.log(ret);
