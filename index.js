@@ -9,11 +9,19 @@ i18next.init({
                 look: {
                     depper: "some deep key"
                 }
+            },
+            common: {
+                save: "Save",
+                cancel: "Cancel"
             }
         },
         de: {
             translation: {
                 key: "hallo Welt"
+            },
+            common: {
+                save: "Save",
+                cancel: "Cancel"
             }
         },
         'de-CH': {
@@ -24,5 +32,5 @@ i18next.init({
     }
 });
 
-const ret = i18next.t('look.depper', { lng: 'de-CH' });
+const ret = i18next.t('save', { ns: 'common' });
 console.log(ret);
