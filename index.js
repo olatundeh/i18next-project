@@ -2,6 +2,7 @@ import i18next from 'i18next';
 
 i18next.init({
     fallbackLng: 'en',
+    fallbackNS: 'common',
     resources: {
         en: {
             translation: {
@@ -21,7 +22,7 @@ i18next.init({
             },
             common: {
                 save: "Save",
-                cancel: "Cancel"
+                cancel: "Abbrechen"
             }
         },
         'de-CH': {
@@ -32,5 +33,5 @@ i18next.init({
     }
 });
 
-const ret = i18next.t('save', { ns: 'common' });
+const ret = i18next.t('cancel', { lng: 'de' });
 console.log(ret);
