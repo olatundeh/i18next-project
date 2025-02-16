@@ -9,6 +9,10 @@ i18next.init({
                 key: "hello World",
                 look: {
                     depper: "some deep key"
+                },
+                error: {
+                    404: "not found",
+                    unknown: "an error occurred"
                 }
             },
             common: {
@@ -33,5 +37,6 @@ i18next.init({
     }
 });
 
-const ret = i18next.t('cancel', { lng: 'de' });
+const code = 403;
+const ret = i18next.t([`error.${code}`, 'error.unknown']);
 console.log(ret);
