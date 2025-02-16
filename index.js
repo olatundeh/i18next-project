@@ -6,32 +6,12 @@ i18next.init({
     resources: {
         en: {
             translation: {
-                key: "hello World",
-                look: {
-                    depper: "some deep key"
-                }
-            },
-            common: {
-                save: "Save",
-                cancel: "Cancel"
-            }
-        },
-        de: {
-            translation: {
-                key: "hallo Welt"
-            },
-            common: {
-                save: "Save",
-                cancel: "Abbrechen"
-            }
-        },
-        'de-CH': {
-            translation: {
-                //key: "hoi Walt"
+                key: "{{what}} is {{how}}"
             }
         }
     }
 });
 
-const ret = i18next.t('cancel', { lng: 'de' });
+const code = 403;
+const ret = i18next.t('key', {what: 'i18next', how: '<i>awesome</i>'});
 console.log(ret);
