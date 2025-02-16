@@ -6,7 +6,7 @@ i18next.init({
     resources: {
         en: {
             translation: {
-                key: "{{what}} is {{how}}"
+                key: "{{what}} is {{-how}}"
             }
         }
     }
